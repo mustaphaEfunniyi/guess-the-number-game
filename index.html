@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>|Guess Number Game|</title>
 </head>
-<body>
+<body onload="init()">
     <main>
         <div id="welcomeScreen">
             <h2>Guess the random nuumber <br> between 1- 100</h2>
             <section>
                 <p>Select difficulty setting:</p>
                 <div class="button-wrapper">
-                    <button>Easy: 10 attempts</button>
-                    <button>Hard: 5 attempts</button>
+                    <button id="easy">Easy: 10 attempts</button>
+                    <button id="hard">Hard: 5 attempts</button>
                 </div>
             </section>
         </div>
